@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.simplilearn.webapp.model.Employee" table="emp_data">
+		<id name="id" type="int" column="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name" type="string" column="name" ></property>
+		<property name="email" type="string" column="email" ></property>
+		<property name="password" type="string" column="password" ></property>
+		<property name="country" type="string" column="country" ></property>
+	</class>
+</hibernate-mapping>
